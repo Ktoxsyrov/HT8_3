@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "HT8_3"
+rootProject.name = "HT5_3"
 include ':app'

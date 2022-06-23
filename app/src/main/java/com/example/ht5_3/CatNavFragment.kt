@@ -42,8 +42,11 @@ class CatNavFragment : Fragment() {
 
         binding.favoritesButton.setOnClickListener {
             requireFragmentManager().beginTransaction().
-            replace(R.id.catNavFragment,FavoritesFragment(catViewModel.getFavoriteCats()))
+            replace(R.id.containerForFavs,FavoritesFragment(catViewModel.getFavoriteCats()))
                 .commit()
+//
+//            it.findNavController().navigate(R.id.action_catNavFragment_to_favCatsNavFragment)
+
         }
 
         binding.infoButton.setOnClickListener {

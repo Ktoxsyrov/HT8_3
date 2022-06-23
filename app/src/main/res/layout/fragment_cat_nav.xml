@@ -83,5 +83,11 @@
         app:layout_constraintBottom_toBottomOf="@+id/likeButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:tint="@color/dark_blue" />
+
+    <androidx.fragment.app.FragmentContainerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/containerForFavs"
+        />
 </androidx.constraintlayout.widget.ConstraintLayout>
 

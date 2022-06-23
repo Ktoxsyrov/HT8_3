@@ -22,10 +22,18 @@
         <action
             android:id="@+id/action_catNavFragment_to_infoNavFragment"
             app:destination="@id/infoNavFragment" />
+        <action
+            android:id="@+id/action_catNavFragment_to_favCatsNavFragment"
+            app:destination="@+id/favCatsNavFragment"
+            />
     </fragment>
     <fragment
         android:id="@+id/favCatsNavFragment"
         android:name="com.example.ht5_3.FavCatsNavFragment"
         android:label="fragment_fav_cats_nav"
-        tools:layout="@layout/fragment_fav_cats_nav" />
+        tools:layout="@layout/fragment_fav_cats_nav" >
+        <action
+            android:id="@+id/action_favCatsNavFragment_to_catNavFragment"
+            />
+    </fragment>
 </navigation>

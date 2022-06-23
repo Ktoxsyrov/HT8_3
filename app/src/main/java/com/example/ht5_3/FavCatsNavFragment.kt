@@ -6,6 +6,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.activity.OnBackPressedCallback
 import androidx.fragment.app.Fragment
+import androidx.navigation.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.ht5_3.databinding.FragmentFavoritesBinding
 
@@ -23,7 +24,7 @@ class FavCatsNavFragment(favCatsList: List<Cat>) : Fragment() {
         binding.favoritesRecycler.layoutManager = LinearLayoutManager(requireContext())
         println(favList.size)
         binding.backToFeedButton.setOnClickListener {
-            fragmentManager?.beginTransaction()?.remove(this)?.commit()
+           it.findNavController().navigate(R.id.action_favCatsNavFragment_to_catNavFragment)
         }
         return binding.root
 
