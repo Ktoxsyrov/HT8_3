@@ -20,9 +20,6 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
         supportActionBar?.hide()
-
-        supportFragmentManager.beginTransaction().replace(R.id.containerForCat, CatFragment())
-            .commit()
     }
 
 
